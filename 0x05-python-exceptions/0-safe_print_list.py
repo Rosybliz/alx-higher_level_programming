@@ -5,7 +5,7 @@ a = 0
     for item in my_list[]:
         try:
             if isinstance(item, (int,str,float,bool,set,dict,list,tuple))
-                 print(my_list[i], end=" ")
+                 print("{}".format(my_list[item]), end=" ")
                 x += 1
         except IndexError:
             pass
