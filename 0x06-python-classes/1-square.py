@@ -12,4 +12,4 @@ class Square:
         Args:
             size(int): this is the size of the square instantiated to private
         """
-        self.___size = size
+        self.__size = size
