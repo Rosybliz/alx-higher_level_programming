@@ -3,7 +3,6 @@
 """This class is an empty class named square"""
 
 class Square:
-
-    """A square class will be used to create a square"""
+    """A Square class will be used to create a square"""
     
     pass
