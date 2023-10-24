@@ -4,4 +4,4 @@
 
 class Square:
     pass
-"""The pass keyword is there bcos the class is an empty one, to avoid error
+"""The pass keyword is there bcos the class is an empty one, to avoid error"""
