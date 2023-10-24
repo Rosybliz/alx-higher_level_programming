@@ -5,6 +5,7 @@
 
 class Square:
     """This Square class will be used to create a square shape"""
+
     def __init__(self, size=0):
         
         """instantiation with optional size =0
