@@ -5,7 +5,6 @@
 
 class Square:
     """This Square class will be used to create a square shape"""
-
     def __init__(self, size=0):
 
         """instantiation with optional size =0
@@ -34,6 +33,11 @@ class Square:
         else:
             self.__size = value
 
+    @property
+    def position(self):
+        """Returns this square position"""
+        return self.__position
+    
     @position.setter
     def position(self, value):
         """Sets this square position"""
@@ -46,3 +50,16 @@ class Square:
             self.__position = value
          else:
             raise TypeError("position must be a tuple of 2 positive integers")
+    def my_print(self):
+        """Prints this square"""
+        if self.size > 0:
+            for m in range(0, self.position[1]):
+                print()
+            for i in range(0, self.size):
+                for m in range(0, self.position[0]):
+                    print(end=" ")
+                for j in range(0, self.size):
+                    print("#", end="")
+                print()
+        else:
+            print()
