@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
-
-"""This is a derived class that inherits from the Base base clas"""
+"""This module contains `Rectangle` class."""
 
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    def __init__(self,width,height,x=0,y=0,id=None):
+    """The `Rectangle` class."""
 
+    def __init__(self, width, height, x=0, y=0, id=None):
         """Creates a `Rectangle`.
 
         Args:
@@ -20,10 +20,10 @@ class Rectangle(Base):
             id(int): The `Rectangle` id
         """
         super().__init__(id)
-        self.__width = width
-        self.__height =  height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
